@@ -7,7 +7,7 @@
     var b=255;
     
     function sc(){
-      document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")")
+      document.body.style.backgroundColor = ("rgb("+r+","+g+","+b+")");
     }
     
     function sChangeR(val){
@@ -30,8 +30,8 @@
   <a href="index.html"> Main Page? </a>
   <button> Do stuff!? </button>
   <br>
-  <input type="range" id="slider" min="0" max="255" onchange="sChangeR()"/> <br>
-  <input type="range" id="slider" min="0" max="255" onchange="sChangeG()"/> <br>
-  <input type="range" id="slider" min="0" max="255" onchange="sChangeB()"/> <br>
+  <input type="range" id="slider" min="0" max="255" onchange="sChangeR(this.value)"/> <br>
+  <input type="range" id="slider" min="0" max="255" onchange="sChangeG(this.value)"/> <br>
+  <input type="range" id="slider" min="0" max="255" onchange="sChangeB(this.value)"/> <br>
 </body>
 </html>
