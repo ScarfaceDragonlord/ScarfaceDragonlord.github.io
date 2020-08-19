@@ -14,18 +14,18 @@
 <body>
   <script>
     function makeMeeple(){
-      var alba = document.createElement("div");
-			alba.style.height = "100px";
-			alba.style.width = "100px";
-			alba.style.backgroundImage = "url(redmeeple.png)";
-			alba.style.backgroundSize = "contain";
-			alba.style.position = "relative";
-			alba.style.display = "inline-block";
-			document.body.appendChild(alba);
+      	var alba = document.createElement("div");
+	alba.style.height = "100px";
+	alba.style.width = "100px";
+	alba.style.backgroundImage = "url(redmeeple.png)";
+	alba.style.backgroundSize = "contain";
+	alba.style.position = "relative";
+	alba.style.display = "inline-block";
+	document.body.appendChild(alba);
     }
   </script>
   <b>RED MEEPLE! </b>
-  <button onclick=makeMeeple()>Make a Meeple :D</button>
+  <button onclick="makeMeeple()">Make a Meeple :D</button>
   <div id="redmeeple"></div>
 </body>
 </html>
