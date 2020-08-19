@@ -6,7 +6,7 @@
       background-image:url("redmeeple.jpg");
       width:100px;
       height:100px;
-      background-repeat:no-repeat;
+      position:relative;
       background-size:contain;
     }
     b{
@@ -19,6 +19,7 @@
   <button onclick="makeMeeple()"> Make a Meeple :D </button>
   <div id="redmeeple"></div>
   <script>
+    var i = 1;
     function makeMeeple(){
       	var alba = document.createElement("div");
 	alba.style.height = "100px";
@@ -29,8 +30,10 @@
 	alba.style.position = "relative";
 	alba.style.display = "inline-block";
 	document.body.appendChild(alba);
+	i++;
     }
   </script>
+	<p></p>
   
 </body>
 </html>
