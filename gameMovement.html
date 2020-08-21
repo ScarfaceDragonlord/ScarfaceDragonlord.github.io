@@ -17,8 +17,7 @@
     return this._pressed[keyCode];
   },
   
-  onKeydown: function(event){
-    e.preventDefault() // THIS ONE 
+  onKeydown: function(event){ 
     this._pressed[event.keyCode] = true;
   },
   
@@ -38,8 +37,8 @@
  var goalSize = 15;
  
  var canvas = document.getElementById('game');
- canvas.width = window.innerWidth;
- canvas.height = window.innerHeight;
+ canvas.width = window.innerWidth-50;
+ canvas.height = window.innerHeight-50;
  
  var ctx = canvas.getContext('2d');
  
