@@ -33,6 +33,8 @@
  var y = 50;
  var goalX = 200;
  var goalY = 200;
+ var playerSize = 25;
+ var goalSize = 15;
  
  var canvas = document.getElementById('game');
  canvas.width = window.innerWidth;
@@ -70,12 +72,18 @@
    y+=sy;
   }
   
+  if ((abs(x-goalX))**2 + (abs(y-goalY))**2 < (playerSize+goalSize)**2){
+   playerSize += 2;
+   goalX = Math.random() * canvas.width;
+   goalY = Math.random() * canvas.height;
+  }
+  
   var character = new Path2D();
-  character.arc(x,y,25,0, 2*Math.PI);
+  character.arc(x,y,playerSize,0, 2*Math.PI);
   
   
   var goal = new Path2D();
-  goal.arc(goalX,goalY,10,0,2*Math.PI);
+  goal.arc(goalX,goalY,goalSize,0,2*Math.PI);
   
   ctx.fillStyle = "#f59551";
   ctx.fill(character);
