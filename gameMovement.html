@@ -31,8 +31,6 @@
  
  var x = 50;
  var y = 50;
- var sx = 0;
- var sy = 0;
  var goalX = 200;
  var goalY = 200;
  
@@ -45,6 +43,8 @@
  var speed = 3;
  
  function draw(){
+  var sx = 0;
+  var sy = 0;
   ctx.clearRect(0,0,canvas.width,canvas.height);
   
   if (Key.isDown(Key.UP)){
