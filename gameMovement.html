@@ -72,12 +72,14 @@
   
   var character = new Path2D();
   character.arc(x,y,25,0, 2*Math.PI);
-  ctx.fillStyle = "#f59551";
-  ctx.fill(character);
+  
   
   var goal = new Path2D();
   goal.arc(goalX,goalY,25,0,2*Math.PI);
-  ctx.fillStyle = "FF0000";
+  
+  ctx.fillStyle = "#f59551";
+  ctx.fill(character);
+  ctx.fillStyle = "ff0000";
   ctx.fill(goal);
  }
  
