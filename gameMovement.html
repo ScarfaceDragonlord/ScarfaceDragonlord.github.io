@@ -33,6 +33,8 @@
  var y = 50;
  var sx = 0;
  var sy = 0;
+ var goalX = 200;
+ var goalY = 200;
  
  var canvas = document.getElementById('game');
  canvas.width = window.innerWidth;
@@ -70,7 +72,13 @@
   
   var character = new Path2D();
   character.arc(x,y,25,0, 2*Math.PI);
+  ctx.fillStyle = "#f59551";
   ctx.fill(character);
+  
+  var goal = new Path2D();
+  goal.arc(goalX,goalY,25,0,2*Math.PI);
+  ctx.fillStyle = "FF0000";
+  ctx.fill(goal);
  }
  
  setInterval(draw,10);
