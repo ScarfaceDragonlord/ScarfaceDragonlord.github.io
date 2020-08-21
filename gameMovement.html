@@ -44,13 +44,16 @@
   ctx.clearRect(0,0,canvas.width,canvas.height);
   
   if Key.isDown(Key.UP){
-   y+= speed;
-  }else if Key.isDown(Key.DOWN){
    y-= speed;
   }
+  else if Key.isDown(Key.DOWN){
+   y+= speed;
+  }
+  
   if Key.isDown(Key.RIGHT){
    x+= speed;
-  }else if Key.isDown(Key.LEFT){
+  }
+  else if Key.isDown(Key.LEFT){
    x-= speed;
   }
   var character = new Path2D();
